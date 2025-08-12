@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Fashion Try-On</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+            .container { padding: 20px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+            .feature-list { grid-template-columns: 1fr; }
+            .contact-method { display: block; margin: 8px 0; }
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FF3F73;
+            border-bottom: 3px solid #FF3F73;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #FF3F73;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .faq-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #FF3F73;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #FF3F73;
+            margin-bottom: 10px;
+        }
+        .contact-section {
+            background: #fff3f8;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #FF3F73;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .contact-method {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 15px 25px;
+            background: #FF3F73;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .contact-method:hover {
+            background: #e6356a;
+            color: white;
+        }
+        .tips-section {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+            margin: 20px 0;
+        }
+        .warning-section {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background: #f1f3f4;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support Center</h1>
+        
+        <p>Welcome to Fashion Try-On Support! We're here to help you get the most out of your virtual fashion experience.</p>
+
+        <div class="contact-section">
+            <h3>Need Help? Contact Us!</h3>
+            <p>Our support team is ready to assist you</p>
+            <a href="mailto:support@fashiontryon.app" class="contact-method">📧 Email Support</a>
+            <a href="#" class="contact-method">💬 Live Chat</a>
+        </div>
+
+        <h2>🚀 Getting Started</h2>
+        
+        <div class="feature-list">
+            <div class="feature-item">
+                <div class="feature-icon">📸</div>
+                <h4>Upload Your Photo</h4>
+                <p>Take or select a clear full-body photo for best results</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👗</div>
+                <h4>Choose Clothing</h4>
+                <p>Browse our collection or upload your own clothing images</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🤖</div>
+                <h4>AI Magic</h4>
+                <p>Our AI creates realistic virtual try-on results</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💾</div>
+                <h4>Save & Share</h4>
+                <p>Save your results and share with friends</p>
+            </div>
+        </div>
+
+        <h2>📋 Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What makes a good photo for try-on?</div>
+            <div class="faq-answer">
+                <strong>A:</strong> For best results, use photos that are:
+                <ul>
+                    <li>Well-lit with good lighting</li>
+                    <li>Full-body shots showing head to toe</li>
+                    <li>Taken against a plain background</li>
+                    <li>High resolution and not blurry</li>
+                    <li>Showing you facing the camera directly</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How long does AI processing take?</div>
+            <div class="faq-answer">
+                <strong>A:</strong> AI processing typically takes 30-60 seconds depending on image complexity and server load. You'll see a progress indicator while your try-on is being generated.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I use photos of other people?</div>
+            <div class="faq-answer">
+                <strong>A:</strong> You should only upload photos of yourself or photos where you have explicit permission from the person. Uploading photos without consent violates our Terms of Use.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Are my photos stored on your servers?</div>
+            <div class="faq-answer">
+                <strong>A:</strong> Photos are processed temporarily for AI generation and then deleted from our servers. Generated results are stored locally on your device. See our Privacy Policy for full details.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What's included in the premium version?</div>
+            <div class="faq-answer">
+                <strong>A:</strong> Premium features include:
+                <ul>
+                    <li>Unlimited try-on sessions</li>
+                    <li>Access to exclusive clothing collections</li>
+                    <li>Higher quality AI processing</li>
+                    <li>Priority processing speed</li>
+                    <li>Advanced editing tools</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Why isn't my try-on result accurate?</div>
+            <div class="faq-answer">
+                <strong>A:</strong> AI results depend on photo quality and clothing compatibility. Try using:
+                <ul>
+                    <li>Better lighting in your photo</li>
+                    <li>A clearer, higher resolution image</li>
+                    <li>Different clothing items</li>
+                    <li>A more direct camera angle</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>💡 Tips for Best Results</h2>
+        
+        <div class="tips-section">
+            <h4>📸 Photo Tips:</h4>
+            <ul>
+                <li><strong>Lighting:</strong> Use natural light or bright indoor lighting</li>
+                <li><strong>Background:</strong> Plain, solid-colored backgrounds work best</li>
+                <li><strong>Pose:</strong> Stand straight, arms slightly away from body</li>
+                <li><strong>Distance:</strong> Stand 6-8 feet away from camera</li>
+                <li><strong>Clothing:</strong> Wear fitted clothes for better AI recognition</li>
+            </ul>
+        </div>
+
+        <div class="tips-section">
+            <h4>👗 Clothing Selection Tips:</h4>
+            <ul>
+                <li><strong>Resolution:</strong> Choose high-quality clothing images</li>
+                <li><strong>Style Match:</strong> Select clothes appropriate for your body type</li>
+                <li><strong>Color Contrast:</strong> Avoid clothes that blend with your skin tone</li>
+                <li><strong>Complexity:</strong> Simple designs often work better than very detailed ones</li>
+            </ul>
+        </div>
+
+        <h2>⚠️ Troubleshooting</h2>
+
+        <div class="warning-section">
+            <h4>Common Issues & Solutions:</h4>
+            
+            <p><strong>App crashes or freezes:</strong></p>
+            <ul>
+                <li>Force close and restart the app</li>
+                <li>Restart your device</li>
+                <li>Update to the latest app version</li>
+                <li>Free up storage space on your device</li>
+            </ul>
+
+            <p><strong>Poor try-on results:</strong></p>
+            <ul>
+                <li>Use a higher quality photo</li>
+                <li>Try different clothing items</li>
+                <li>Ensure good lighting in your photo</li>
+                <li>Check that your full body is visible</li>
+            </ul>
+
+            <p><strong>Processing takes too long:</strong></p>
+            <ul>
+                <li>Check your internet connection</li>
+                <li>Try again during off-peak hours</li>
+                <li>Use smaller image files</li>
+                <li>Contact support if problem persists</li>
+            </ul>
+        </div>
+
+        <h2>🔧 Technical Requirements</h2>
+        <ul>
+            <li><strong>iOS:</strong> iOS 14.0 or later</li>
+            <li><strong>Storage:</strong> At least 100MB free space</li>
+            <li><strong>Internet:</strong> Stable internet connection required</li>
+            <li><strong>Camera:</strong> Access to photo library or camera</li>
+            <li><strong>Memory:</strong> 2GB RAM recommended</li>
+        </ul>
+
+        <h2>💎 Premium Support</h2>
+        <p>Premium users get priority support with:</p>
+        <ul>
+            <li>Faster response times (within 4 hours)</li>
+            <li>Direct access to our AI specialists</li>
+            <li>Advanced troubleshooting assistance</li>
+            <li>Beta feature access and feedback opportunities</li>
+        </ul>
+
+        <h2>🔐 Privacy & Security</h2>
+        <p>Your privacy and security are our top priorities:</p>
+        <ul>
+            <li>All data transmission is encrypted</li>
+            <li>Photos are processed securely and deleted after use</li>
+            <li>We never share your personal photos</li>
+            <li>You control what data is stored on your device</li>
+        </ul>
+
+        <h2>📱 App Updates</h2>
+        <p>Keep your app updated for:</p>
+        <ul>
+            <li>Latest AI improvements</li>
+            <li>New clothing collections</li>
+            <li>Bug fixes and performance improvements</li>
+            <li>New features and tools</li>
+        </ul>
+
+        <div class="contact-section">
+            <h3>Still Need Help?</h3>
+            <p>Our support team is available 24/7 to assist you</p>
+            <p>
+                <strong>📧 Email:</strong> support@fashiontryon.app<br>
+                <strong>🌐 Website:</strong> www.fashiontryon.app<br>
+                <strong>⏰ Response Time:</strong> Within 24 hours (4 hours for premium users)
+            </p>
+            <p><em>When contacting support, please include your device model, iOS version, and app version for faster assistance.</em></p>
+        </div>
+
+        <h2>🎯 Feature Requests</h2>
+        <p>Have an idea for a new feature? We'd love to hear from you! Send your suggestions to <strong>features@fashiontryon.app</strong></p>
+
+        <p style="text-align: center; margin-top: 40px; color: #666;">
+            <em>Thank you for choosing Fashion Try-On! We're committed to providing you with the best virtual fashion experience.</em>
+        </p>
+    </div>
+</body>
+</html>

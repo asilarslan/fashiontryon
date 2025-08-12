@@ -1,10 +1,270 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Fashion Try On</title>
-  </head>
-  <body>
-    <h1>Welcome to Fashion Try On</h1>
-    <p>This site is under construction.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Try On - AI-Powered Virtual Try-On App | Download on iOS</title>
+  <meta name="description" content="Fashion Try On - Revolutionary AI-powered virtual try-on app. Upload your photo, choose from thousands of clothing items, and see realistic results instantly. Download now on iOS App Store." />
+  <meta name="keywords" content="fashion try on, virtual try on, AI fashion, clothing app, style app, outfit try on, fashion AI, virtual wardrobe, clothing simulator, fashion technology" />
+  <meta name="author" content="Fashion Try On" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fashiontryon.app/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fashiontryon.app/" />
+  <meta property="og:title" content="Fashion Try On - AI-Powered Virtual Try-On App" />
+  <meta property="og:description" content="Revolutionary AI-powered virtual try-on app. Upload your photo, choose clothing, and see realistic results instantly." />
+  <meta property="og:image" content="https://fashiontryon.app/fashion-try-on-logo.png" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://fashiontryon.app/" />
+  <meta property="twitter:title" content="Fashion Try On - AI-Powered Virtual Try-On App" />
+  <meta property="twitter:description" content="Revolutionary AI-powered virtual try-on app. Upload your photo, choose clothing, and see realistic results instantly." />
+  <meta property="twitter:image" content="https://fashiontryon.app/fashion-try-on-logo.png" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="fashion-try-on-logo.png" />
+  <link rel="apple-touch-icon" href="fashion-try-on-logo.png" />
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Fashion Try On",
+    "description": "AI-powered virtual try-on app for iOS",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "downloadUrl": "https://apps.apple.com/us/app/fashion-try-on/id6749896626"
+  }
+  </script>
+  <style>
+    :root {
+      --brand: #FF3F73;
+      --dark: #0b0b0b;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --bg: #f8f9fa;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .container { max-width: 1040px; margin: 0 auto; padding: 16px; }
+    @media (max-width: 768px) { .container { padding: 12px; } }
+    @media (max-width: 480px) { .container { padding: 16px 12px; } }
+    header { background: #fff; border-bottom: 1px solid #ececec; }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding: 12px 0; gap:12px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight: 800; letter-spacing: .2px; color: var(--dark); }
+    .brand-logo { width: 32px; height: 32px; border-radius: 8px; }
+    .nav a { color: var(--text); text-decoration: none; font-weight: 600; }
+    @media (max-width: 768px) {
+      .nav { flex-direction: column; gap: 8px; text-align: center; }
+      .links { flex-wrap: wrap; justify-content: center; }
+    }
+
+    .hero { padding: 40px 0 24px; }
+    @media (max-width: 768px) { .hero { padding: 24px 0 16px; } }
+    .hero-inner { display:grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: center; }
+    @media (max-width: 900px){ .hero-inner { grid-template-columns: 1fr; gap: 16px; } }
+    .hero-media { 
+      width: 100%; 
+      max-width: 460px; 
+      height: 307px; 
+      border-radius: 20px; 
+      overflow: hidden; 
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) { 
+      .hero-media { 
+        max-width: 384px; 
+        height: 256px; 
+      } 
+    }
+    @media (max-width: 480px) { 
+      .hero-media { 
+        max-width: 320px; 
+        height: 213px; 
+      } 
+    }
+    h1 { margin: 0 0 10px; font-size: 42px; line-height: 1.1; color: var(--dark); }
+    @media (max-width: 768px) { h1 { font-size: 32px; } }
+    @media (max-width: 480px) { h1 { font-size: 28px; } }
+    .subtitle { color: var(--muted); font-size: 18px; margin: 0 0 18px; }
+    @media (max-width: 768px) { .subtitle { font-size: 16px; } }
+
+    .cta-row { display:flex; gap: 12px; align-items:center; flex-wrap: wrap; }
+    @media (max-width: 480px) { .cta-row { flex-direction: column; width: 100%; } }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding: 12px 16px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08);
+      text-decoration: none; font-weight: 700; color: #fff; background: var(--brand);
+      transition: transform .06s ease, box-shadow .2s ease; box-shadow: 0 6px 18px rgba(255,63,115,.25);
+      min-height: 44px; /* Touch target */
+    }
+    @media (max-width: 480px) { .btn { width: 100%; } }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(255,63,115,.28); }
+    .btn-outline { background: #fff; color: var(--dark); border-color: #e5e7eb; box-shadow: none; }
+    .app-store-badge { height: 60px; width: auto; }
+    @media (max-width: 480px) { .app-store-badge { height: 50px; } }
+
+    .card { background: var(--card); border: 1px solid #ececec; border-radius: 12px; padding: 16px; }
+    .features { display:grid; grid-template-columns: repeat(4,1fr); gap: 14px; padding: 10px 0 8px; }
+    @media (max-width: 1024px){ .features { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 560px){ .features { grid-template-columns: 1fr; } }
+    .feature-title { margin: 0 0 6px; font-weight: 700; color: var(--dark); }
+    .feature-text { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .how { display:grid; grid-template-columns: repeat(3,1fr); gap: 14px; padding: 12px 0 8px; }
+    @media (max-width: 900px){ .how { grid-template-columns: 1fr; } }
+    .how .step h3 { margin: 0 0 6px; font-size: 18px; color: var(--dark); }
+    .how .step p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    footer { border-top: 1px solid #ececec; background: #fff; margin-top: 40px; }
+    .footer-inner { 
+      display:flex; 
+      flex-wrap:wrap; 
+      gap: 10px 18px; 
+      align-items:center; 
+      justify-content:space-between; 
+      padding: 20px 0; 
+      font-size: 14px; 
+    }
+    .footer-inner .links { 
+      display: flex; 
+      gap: 16px; 
+      flex-wrap: wrap; 
+    }
+    @media (max-width: 768px) {
+      .footer-inner { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 16px; 
+        padding: 24px 0; 
+      }
+      .footer-inner .links { 
+        justify-content: center; 
+        gap: 20px; 
+      }
+    }
+    @media (max-width: 480px) {
+      .footer-inner .links { 
+        flex-direction: column; 
+        gap: 12px; 
+      }
+      .footer-inner .links a {
+        padding: 8px 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .links { display:flex; gap: 14px; flex-wrap: wrap; }
+    .links a { color: var(--muted); text-decoration: none; }
+    .links a:hover { color: var(--dark); }
+
+    /* Tight spacing to avoid visible empty areas */
+    .compact { margin: 0; padding: 0; }
+    .hero-media { border-radius: 12px; border:1px solid #ececec; background: linear-gradient(135deg, #111, #2b2b2b); aspect-ratio: 4/3; display:flex; align-items:center; justify-content:center; color:#e5e7eb; font-weight:700; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><img src="fashion-try-on-logo.png" alt="Fashion Try On Logo" class="brand-logo" /> Fashion Try On</div>
+      <nav class="links">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_of_use.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>AI-powered virtual try-on</h1>
+          <p class="subtitle">Upload your photo, choose clothing, and see realistic results instantly.</p>
+          <div class="cta-row">
+            <a href="https://apps.apple.com/us/app/fashion-try-on/id6749896626" rel="noopener" target="_blank" aria-label="Download Fashion Try On on the App Store">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="app-store-badge" />
+            </a>
+            <a class="btn btn-outline" href="support.html">Get Support</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="hero-media.png" alt="Fashion Try On App Preview" style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" />
+        </div>
+      </div>
+    </section>
+
+    <section class="compact">
+      <div class="features">
+        <div class="card">
+          <div class="feature-title">Virtual try-on</div>
+          <p class="feature-text">Realistic AI fashion fitting based on your full-body photos.</p>
+        </div>
+        <div class="card">
+          <div class="feature-title">Clothing library</div>
+          <p class="feature-text">Pick from curated styles or upload your own items.</p>
+        </div>
+        <div class="card">
+          <div class="feature-title">Fast results</div>
+          <p class="feature-text">Optimized processing for quick previews without long waits.</p>
+        </div>
+        <div class="card">
+          <div class="feature-title">Save and share</div>
+          <p class="feature-text">Export your results to your photo library in one tap.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="compact">
+      <div class="how">
+        <div class="card step">
+          <h3>1. Add your photo</h3>
+          <p>Use a clear, well-lit full-body photo facing the camera.</p>
+        </div>
+        <div class="card step">
+          <h3>2. Choose clothing</h3>
+          <p>Select from categories or upload a clothing image.</p>
+        </div>
+        <div class="card step">
+          <h3>3. Generate and save</h3>
+          <p>Get a realistic result and save it to your library.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>&copy; <span id="y"></span> Fashion Try On</div>
+      <div class="links">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_of_use.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+        <a href="https://apps.apple.com/us/app/fashion-try-on/id6749896626" target="_blank" rel="noopener">App Store</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

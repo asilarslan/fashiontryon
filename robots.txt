@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fashiontryon.app/sitemap.xml
+
+# Specific crawl instructions
+Crawl-delay: 1
+
+# Block unnecessary files
+Disallow: *.log
+Disallow: *.tmp
